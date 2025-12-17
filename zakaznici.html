@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-<meta charset="UTF-8">
-<title>RP Autoservis - Zákazníci</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>RP Autoservis - Zákazníci</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pemicars-favicon (1) (1).png">
+    <script src="script.js"></script>
 </head>
+
 <body>
 
-<nav>
-    <a href="index.html">Domovská</a>
-    <a href="cenik.html">Ceník</a>
-    <a href="zakaznici.html">Zákazníci</a>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Domovská stránka</a></li>
+            <li><a href="cenik.html">Ceník</a></li>
+            <li><a href="zakaznici.html">Zákazníci</a></li>
+        </ul>
+    </nav>
 
-<section>
-    <h1>Zákazníci a jejich vozidla</h1>
-    <h3>Přidat nové vozidlo</h3>
-    <input id="majitel" placeholder="Jméno majitele"><br>
-    <input id="znackaAuto" placeholder="Značka"><br>
-    <input id="modelAuto" placeholder="Model"><br>
-    <input id="spzAuto" placeholder="SPZ"><br>
-    <input id="barvaAuto" placeholder="Barva"><br>
-    <button onclick="pridatVozidlo()">Přidat vozidlo</button>
+    <section class="zakaznici">
+        <div class="wrapper-zakaznici">
+            <div class="wrapper-zakaznici-polozky">
+                <h1>Zákazníci a jejich vozidla</h1>
+                    <h3>Přidat nové vozidlo</h3>
+                    <input id="majitel" placeholder="Jméno majitele"><br>
+                    <input id="modelAuto" placeholder="Model"><br>
+                    <input id="spzAuto" placeholder="SPZ"><br>
+                    <input id="barvaAuto" placeholder="Barva"><br>
+                    <button onclick="pridatVozidlo()">Přidat vozidlo</button>
+                    <p>Do úprav přidejte každou položku společně s počtem kusů, u pracovní doby hodiny.</p>
+            </div>
+        </div>
+        <div id="seznamVozidel"></div>
 
-    <div id="seznamVozidel"></div>
-</section>
+    </section>
 
 </body>
+
 </html>
