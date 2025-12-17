@@ -1,19 +1,31 @@
-name: Deploy RP Autoservis
+name: Deploy GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # branch, kterou chceš nasadit
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build  # pokud máš build script, jinak tento krok vynech
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./   # kořen repozitáře s index.html, cenik.html, zakaznici.html
+          publish_dir: ./docs  # složka s webem
