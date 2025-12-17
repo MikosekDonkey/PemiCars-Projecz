@@ -1,31 +1,131 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-<meta charset="UTF-8">
-<title>RP Autoservis - Ceník</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>PemiCars - Ceník</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pemicars-favicon (1) (1).png">
 </head>
+
 <body>
 
-<nav>
-    <a href="index.html">Domovská</a>
-    <a href="cenik.html">Ceník</a>
-    <a href="zakaznici.html">Zákazníci</a>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Domovská stránka</a></li>
+            <li><a href="cenik.html">Ceník</a></li>
+            <li><a href="zakaznici.html">Zákazníci</a></li>
+        </ul>
+    </nav>
 
-<section>
-    <h1>Ceník služeb</h1>
-    <h2>Lakýrnické práce</h2>
-    <ul>
-        <li>Přelakování karosérie - 3 500,-</li>
-        <li>Přelakování dveří - 2 400,-</li>
-        <li>Přelakování komplet - 25 000,-</li>
-        <li>Přelakování disků - 1 500,-</li>
-        <li>Změna textu SPZ - 15 000,-</li>
-        <li>Změna designu SPZ - 3 750,-</li>
-    </ul>
-    <!-- Zbytek ceníku lze doplnit stejně jako v předchozím HTML -->
-</section>
+    <section class="cenik">
+        <div class="box-cenik">
+            <h1>Ceník služeb</h1>
+            <br>
+            <hr>
+            <h2>Základní ceník</h2>
+            <ul class="sluzby">
+                <li>Celková oprava vozidla - od 200 000CZK</li>
+                <li>IZS výbava vozidla - od 65 000CZK</li>
+                <li>IZS komplet (nové vozidlo) - od 89 350CZK</li>
+                <li>Práce - 1 500Kč/h</li>
+            </ul>
+            <hr>
+            <h2>Lakýrnické práce</h2>
+            <ul class="sluzby">
+                <li>Přelakování karosérie - 3 500,- CZK</li>
+                <li>Přelakování dveří - 2 400,- CZK</li><br>
+                <li>Přelakování komplet - 25 000,- CZK</li><br>
+                <li>Přelakování disků - 1 500,- CZK</li>
+                <li>Změna textu SPZ - 15 000,- CZK</li>
+                <li>Změna designu SPZ - 3 750,- CZK</li>
+            </ul>
+            <hr>
+            <h2>Opravy</h2>
+            <ul class="sluzby">
+                <li>Kufr - 7 500,- CZK</li>
+                <li>Kapota - 10 000,- CZK</li>
+                <li>Střecha - 12 000,- CZK</li>
+                <li>Přední dveře - 6 000,- CZK</li>
+                <li>Zadní dveře - 6 000,- CZK</li>
+                <li>Sklo - 5 000,-</li>
+                <li>Nárazník přední / zadní - 4 000,- CZK</li>
+                <li>Podvozek - 12 500,- CZK</li>
+                <li>Světlo - 1 500,- CZK (1ks)</li>
+                <li>Motor - 20 000,- CZK</li>
+                <li>AirBagy - 4 500,- CZK</li>
+                <li>Zatmavenná skla - 5 000,- CZK (1ks)</li>
+            </ul>
+            <hr>
+            <h2>Nové díly</h2>
+            <ul class="sluzby">
+                <li>Přední dveře Levé - 10 000,- CZK</li>
+                <li>Přední dveře Pravé - 10 000,- CZK</li>
+                <br>
+                <li>Zadní dveře Levé - 12 000,- CZK</li>
+                <li>Zadní dveře Pravé - 12 000,- CZK</li>
+                <br>
+                <li>Kufrové dveře - 15 000,- CZK</li>
+                <br>
+                <li>Kapota - 20 000,- CZK</li>
+                <li>Zrcátka - 4 000,- CZK</li>
+                <li>Světelné reflektory - 5 500,- CZK</li>
+                <li>Nárazník přední/zadní - 7 500,- CZK</li>
+                <br>
+                <li>Čelní sklo - 14 000,- CZK</li>
+                <li>Zadní sklo - 12 000,- CZK</li>
+                <li>Boční sklo - 6 000,- CZK</li>
+                <li>Zrcátkové sklo - 2 500,- CZK</li>
+                <hr>
+            </ul>
+            <h2>Turbo</h2>
+            <ul class="sluzby">
+                <li>Turbo Classic - 15 000,- CZK</li>
+                <li>Turbo Grande - 25 000,- CZK</li>
+                <li>Turbo Ultimate Edition - 50 000,- CZK</li>
+                <li>Turbo Ultimate Pro Max - 75 000,- CZK</li>
+            </ul>
+            <hr>
+            <h2>Výměny kol</h2>
+            <h3>Letní kola</h3>
+            <ul class="sluzby">
+                <li>1ks - 1 500,-CZK</li>
+                <li>2ks - 3 500,- CZK</li>
+                <li>4ks - 7 300,-</li>
+            </ul>
+            <br>
+            <h3>Zimní kola</h3>
+            <ul class="sluzby">
+                <li>1ks - 1 500,-CZK</li>
+                <li>2ks - 3 500,- CZK</li>
+                <li>4ks - 7 300,-</li>
+            </ul>
+            <hr>
+            <h2>Tuning</h2>
+            <ul class="sluzby">
+                <li>Čipování motoru 100+ hp - 15 000,- CZK</li>
+                <li>Čipování motoru 500+ hp - 25 000,- CZK</li>
+                <li>Čipování motoru na maximální level - 50 000,- CZK</li>
+            </ul>
+            <hr>
+            <ul class="sluzby">
+                <li>Výměna oleje - 2000,- CZK</li>
+                <li>Výměna benzínu - 1000,- CZK</li>
+                <li>Výměna palivové nádrže - 15 000,- CZK</li>
+                <li>Oprava palivové nádrže - 3000 - 10 000,- CZK</li>
+                <li>Výměna nádrže na olej - 9 000,- CZK</li>
+                <li>Oprava nádrže na olej - 2000 - 7000,- CZK</li>
+                <li>Výměna autobaterie - 5 400,- CZK</li>
+                <br>
+                <li>Zimní gumy - 4ks za 2500,- CZK</li>
+                <li>Přezutí gum - 200,- CZK</li>
+                <li>Lékárnička - 389,- CZK</li>
+                <li>Povinná výbava - 2 400,- CZK</li>
+                <li>Technická kontrola, Emise / STK - 2 000,- CZK</li>
+            </ul>
+        </div>
+    </section>
 
 </body>
+
 </html>
