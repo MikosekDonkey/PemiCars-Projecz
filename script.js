@@ -57,8 +57,24 @@ function pridatNakup(id) {
 
 function zobrazDetail(id) {
     const auto = vozidla.find(a => a.id === id);
-    let nakupyHtml = auto.nakupy.map(n => `${n.datum} – ${n.popis}`).join("\n");
-    alert(`Majitel: ${auto.majitel}\nModel: ${auto.model}\nSPZ: ${auto.spz}\nBarva: ${auto.barva}\nNákupy:\n${nakupyHtml}`);
+
+    if (!auto) return;
+
+    let nakupyHtml = auto.nakupy.length
+        ? auto.nakupy.map(n => 
+            `${n.datum} – ${n.popis} (${n.cena} Kč)`
+          ).join("\n")
+        : "Žádné záznamy";
+
+    alert(
+`Majitel: ${auto.majitel}
+Model: ${auto.model}
+SPZ: ${auto.spz}
+Barva: ${auto.barva}
+
+Historie služeb:
+${nakupyHtml}`
+    );
 }
 
 function vykreslitVozidla() {
