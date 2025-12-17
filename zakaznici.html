@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>RP Autoservis - Zákazníci</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Domovská</a>
+    <a href="cenik.html">Ceník</a>
+    <a href="zakaznici.html">Zákazníci</a>
+</nav>
+
+<section>
+    <h1>Zákazníci a jejich vozidla</h1>
+    <h3>Přidat nové vozidlo</h3>
+    <input id="majitel" placeholder="Jméno majitele"><br>
+    <input id="znackaAuto" placeholder="Značka"><br>
+    <input id="modelAuto" placeholder="Model"><br>
+    <input id="spzAuto" placeholder="SPZ"><br>
+    <input id="barvaAuto" placeholder="Barva"><br>
+    <button onclick="pridatVozidlo()">Přidat vozidlo</button>
+
+    <div id="seznamVozidel"></div>
+</section>
+
+</body>
+</html>
