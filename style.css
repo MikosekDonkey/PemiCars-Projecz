@@ -54,6 +54,11 @@ nav ul li a {
     transition: color 0.3s, transform 0.2s;
 }
 
+.active{
+    box-shadow: 0 0 5px 2px rgba(148, 48, 9, 0.5);
+    color: rgb(148, 48, 9);
+}
+
 nav ul li a:hover {
     box-shadow: 0 0 5px 2px rgba(148, 48, 9, 0.5);
     color: rgb(148, 48, 9);
